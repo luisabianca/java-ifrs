@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrada de Dados</title>
+</head>
+<body>
+    
+    <div>
+
+        <h1>Entrada de Dados</h1>
+
+        <p>
+            Em Java existem diversas maneiras de realizar entrada de dados.<br/>
+            Uma delas é através do método <b>System.console().readLine()</b>.
+        </p>
+    
+        <p>
+            Este método para a execução do programa enquanto o usuário não
+            digitar algo pelo teclado e pressionar a tecla ENTER. <br/> 
+            Quando isso acontece, o método devolve o que foi digitado 
+            ao programa como um valor String. Esse valor não é 
+            armazenado em uma variável automaticamente. <br/> Por isso 
+            precisamos utilizar o operador de atribuição para colocar 
+            o valor digitado em alguma variável, como fizemos no programa 
+            para cálculo da média de notas.
+        </p>
+
+        <p>
+            O que é <b>Double.parseDouble</b>? Este é outro método que existe em Java. 
+            Ele serve para transformarmos um valor String em double.<br/>
+            Nós o utilizamos em nosso programa do cálculo da média para transformar 
+            o valor devolvido por System.console().readLine(), que é String, em um 
+            valor double, que pode ser armazenado nas variáveis N1, N2, N3 e N4 (todas do tipo double). 
+            Isso foi necessário porque não podemos armazenar um valor String em uma variável double.
+        </p>
+
+        <p>
+            Outros exemplos de conversão:
+        </p>
+
+        <p>
+            <b>Boolean.parseBoolean</b><br/>
+            <b>Integer.parseInt</b><br/>
+            <b>Byte.parseByte</b><br/>
+            <b>Float.parseFloat</b><br/>
+            <b>Long.parseLong</b><br/>
+            <b>Short.parseShort</b>
+        </p>
+
+        <p>
+            Note que não existe um método de conversão para o tipo char. 
+            Como fazer para ler dados desse tipo? Pode-se fazer a leitura 
+            de um valor String e depois extrair o primeiro caractere 
+            dessa String, utilizando o método charAt, como mostrado abaixo:
+        </p>
+
+        <b>
+            System.console.readLine().charAt(0)
+        </b>
+
+    </div>
+
+
+</body>
+</html>

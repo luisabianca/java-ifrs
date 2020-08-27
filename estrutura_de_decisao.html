@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Decisão</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    
+    <div>
+
+        <h1>Estrutura de Decisão do tipo Se...Então</h1>
+
+        <div class="examples">
+            <strong>se</strong> teste <strong>entao</strong><br/>
+            <em>conjunto de instrucoes 1</em><br/>
+            <strong>senao</strong><br/>
+            <em>conjunto de intrucoes 2</em><br/>
+            <strong>fim se</strong>
+        </div>
+
+        <p><strong>Ordem de precedência:</strong></p>
+
+        <ol>
+            <li>NÃO</li>
+            <li>/ * mod div</li>
+            <li>+ -</li>
+            <li>> >= < <=</li>
+            <li>= <> !=</li>
+            <li>E</li>
+            <li>OU</li>
+        </ol>
+
+        <p>Estrutura em Java:</p>
+
+        <div class="examples">
+            <strong>if</strong> (teste)<br/>
+            <em>conjunto de instrucoes 1</em><br/>
+            <strong>else</strong><br/>
+            <em>conjunto de intrucoes 2</em><br/>
+        </div>
+
+        <p>A estrutura do <em>if</em> deve estar sempre entre parênteses.</p>
+
+        <div class="examples">
+            <strong>public class</strong> decisao { <br/>
+                <strong>public static void</strong> main(<strong>String</strong>[] args) { <br/>
+                    <strong>double</strong> N1, N2, N3, N4, RES; <br/>
+
+                    <p>
+                        System.out.println("Informe a nota do primeiro bimestre: "); <br/>
+                        N1 = Double.parseDouble(System.console().readLine()); <br/>
+    
+                        System.out.println("Informe a nota do segundo bimestre: "); <br/>
+                        N2 = Double.parseDouble(System.console().readLine()); <br/>
+    
+                        System.out.println("Informe a nota do terceiro bimestre: "); <br/>
+                        N3 = Double.parseDouble(System.console().readLine()); <br/>
+    
+                        System.out.println("Informe a nota do quarto bimestre: "); <br/>
+                        N4 = Double.parseDouble(System.console().readLine()); <br/>
+                    </p>
+
+
+                    <p>RES = (N1 + N2 + N3 + N4) / 4;</p>
+
+                    <p>System.out.print("Média das notas é: "); <br/>
+                        System.out.print(RES); <br/>
+                    </p>
+
+                    <strong>if</strong>(RES >= 7) { <br/>
+                        System.out.println("Parabéns, você foi Aprovado!"); <br/>
+                    } <strong>else</strong> { <br/>
+                        System.out.println("Infelizmente você foi Reprovado!"); <br/>
+                    } <br/>
+                } <br/>
+            }
+        </div>
+
+        <br>
+
+        <div class="examples">
+            <strong>public class</strong> VerificaConceito { <br/>
+                <strong>public static void</strong> main(<strong>String</strong>[] args) { <br/>
+                    <strong>char</strong> conceito; <br/>
+
+                    <p>
+                        System.out.println("Informe o Conceito do aluno: "); <br/>
+                        N1 = Double.parseDouble(System.console().readLine().charAt(0)); <br/>
+                    </p>
+
+                    <strong>if</strong>(conceito != 'A' && conceito != 'B' && conceito != 'C') <br/>
+                        System.out.println("Conceito inválido"); <br/>
+                    <strong>if</strong>(conceito == 'A' || conceito == 'B') <br/>
+                        System.out.println("Aluno aprovado"); <br/>
+                    <strong>if</strong>(conceito == 'C') <br/>
+                        System.out.println("Aluno reprovado!"); <br/>
+                } <br/>
+            } <br/>
+        </div>
+
+        <p>Receber dois números e mostrar o maior</p>
+
+        <div class="examples">
+            <strong>public class</strong> MaiorNumero { <br/>
+                <strong>public static void</strong> main(<strong>String</strong>[] args) { <br/>
+                    <strong>double</strong> N1, N2; <br/>
+
+                    <p>
+                        System.out.println("Informe o primeiro número: "); <br/>
+                        N1 = Double.parseDouble(System.console().readLine()); <br/>
+                    </p>
+
+                    <p>
+                        System.out.println("Informe o segundo número: "); <br/>
+                        N2 = Double.parseDouble(System.console().readLine()); <br/>
+                    </p>
+
+                    <strong>if</strong>(N1 > N2) <br/>
+                        System.out.println(N1); <br/>
+                    <strong>if</strong>(N2 > N1) <br/>
+                        System.out.println(N2); <br/>
+                    <strong>if</strong>(N1 == N2) <br/>
+                        System.out.println("Os números são iguais"); <br/>
+                } <br/>
+            } <br/>
+        </div>
+
+
+    </div>
+
+</body>
+</html>

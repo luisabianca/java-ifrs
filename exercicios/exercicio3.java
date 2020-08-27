@@ -13,8 +13,8 @@ public class exercicio3 {
 
         RES = (N1 + N2 + N3) / 3;
 
-        System.out.println("A média dos tres valores eh: ");
-        System.out.println(RES);
+        System.out.print("A média dos tres valores eh: ");
+        System.out.print(RES);
 
     }
 }
